@@ -14,11 +14,11 @@ try:
     # Random Forest classifier
     rf = RandomForestClassifier()
     # add to ML registry
-    registry.add_algorithm(endpoint_name="water_random_forest_classifier",
+    registry.add_algorithm(endpoint_name="water_classifier",
                            algorithm_object=rf,
                            algorithm_name="random forest",
                            algorithm_status="production",
-                           algorithm_version="0.0.1",
+                           algorithm_version="0.0.7",
                            owner="Dmitriy",
                            algorithm_description="Random Forest with simple pre- and post-processing",
                            algorithm_code=inspect.getsource(RandomForestClassifier))
